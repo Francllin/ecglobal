@@ -35,4 +35,5 @@ end
 
 Entao(/^o cadastro devera ser executado com sucesso$/) do
 expect(page).to have_selector :css, '.interest-grid'
+
 end
