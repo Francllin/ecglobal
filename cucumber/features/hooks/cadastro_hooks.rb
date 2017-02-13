@@ -12,10 +12,4 @@ Before '@carrega_dados' do
   @valor = 10
   @location = 'Salvador, Bahia, Brasil'
 
-
-  
-  # puts 'O email é ' + @email
-  # puts 'O nome ' + @primeiro_nome
-  # puts 'a cidade é ' + @cidade
-  # puts @primeiro_nome.length
 end
