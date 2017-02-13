@@ -11,4 +11,5 @@ Para adquirir poder compartilhar minhas opniões dobre marcas e produtos
 Cenario: Cadastro com sucesso
 Dado que eu acesse a pagina de cadastro
 Quando eu informar os campos obrigatorios
+E enviar o cadastro
 Entao o cadastro devera ser executado com sucesso 
