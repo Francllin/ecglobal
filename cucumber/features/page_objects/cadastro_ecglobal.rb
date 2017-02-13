@@ -1,6 +1,7 @@
 
 class Home < SitePrism::Page
-  set_url "http://ecglobal.com"
+  set_url "http://10.0.0.201/ecglobalnet/"
+
 #   set_url_matcher /google.com\/?/
 end
 
