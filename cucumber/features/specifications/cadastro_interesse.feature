@@ -8,7 +8,7 @@ para que eu possa receber conteúdo relevante e continuar engajado
 
 @carrega_dados
 @carrega_cadastro_user
-@cadastrar_interesse
+@cadastro_interesse
 Cenario: Cadastro de interesses com sucesso
 Dado que eu acesse a pagina de cadastro de interesse
 Quando eu seleciono os campos de interesses
