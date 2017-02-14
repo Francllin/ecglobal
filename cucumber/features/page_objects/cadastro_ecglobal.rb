@@ -1,6 +1,9 @@
 
 class Home < SitePrism::Page
+  # set_url "http://10.0.0.201/ecglobalnet/"
   set_url "http://ecglobal.com"
+  set_url_matcher "/community/subject"
+
 #   set_url_matcher /google.com\/?/
 end
 
@@ -16,3 +19,9 @@ class CadastroEclobal < SitePrism::Page
   element :location, "input[id='location-autocomplete']"
  
 end
+
+class CadastroInteresse < SitePrism::Page
+# element :continu, :xpath, '//input[@title="Continuar"]'
+element :continuar, :xpath, '/html/body/main/section/footer/a'
+
+end 

@@ -31,6 +31,7 @@ end
 
 Quando(/^enviar o cadastro$/) do
 @cadastro.find('#js-button-register').click
+
 end
 
 Entao(/^o cadastro devera ser executado com sucesso$/) do
