@@ -18,6 +18,7 @@ dependencies:
   - rvm use .
   - gem install bundler
   - bundle install
+  - sudo gem install capybara-screenshot
 test:
  override:
   - cd cucumber; cucumber --tags @cadastro_sucesso
