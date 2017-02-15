@@ -16,9 +16,9 @@ dependencies:
   - curl -sSL https://get.rvm.io | bash -s stable --ruby=2.3.3
  override:
   - rvm use .
-  - gem install capybara-screenshot
   - gem install bundler
   - bundle install
 test:
  override:
   - cd cucumber; cucumber --tags @cadastro_sucesso
+  - cd cucumber; cucumber --tags @cadastro_interesse
