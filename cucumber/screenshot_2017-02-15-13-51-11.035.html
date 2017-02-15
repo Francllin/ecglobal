@@ -1,0 +1,571 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="pt" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+    <title></title>        <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="eCGlobal - Onde os consumidores se encontram" />
+    <meta name="author" content="eCGlobal Inc." />
+    <meta name="theme-color" content="#365D98" />
+    <link href="/ecglobalnet/assets/css/main.css" rel="stylesheet" />
+    <link rel="manifest" href="/ecglobalnet/manifest.json" />
+    <link href="/favicon.ico" rel="shortcut icon" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+      </head>
+  <body data-spy="scroll" data-target="#js-nav-scrollspy">
+    <div class="notification" data-notification=""></div>
+
+       <div class="confirm-account" role="alert">
+      <div class="container">
+        <div class="confirm-account__content">
+         <p><b>Olá, ainda estamos esperando você completar o seu cadastro!</b></p><p>Uma mensagem de confirmação foi enviada para <b>teste1@satterfield.net</b>, confere lá.</p>        </div>
+        <div class="confirm-account__actions">
+          <a class="confirm-account__button" href="/ecglobalnet/profile/sendActivationLink" role="button">Reenviar</a>
+        </div>
+      </div>
+    </div>
+    
+    <header class="site-header is-mobile affix-top" data-spy="affix" data-offset-top="60">
+      <nav class="navbar navbar-default nav-fixed">
+         <div class="container site-header__wrapper">
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle offcanvas-toggle pull-left js-offcanvas-has-events" data-toggle="offcanvas" data-target="#js-menu-mobile">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand site-header__brand" href="/ecglobalnet/private">
+                eCGlobal
+              </a>
+            </div>
+
+            <!-- isDesktop -->
+            <div class="nav-global hidden-sm hidden-xs">
+
+                                <ul class="nav-site  nav navbar-nav navbar-left">
+                            <li class="">
+                                <a href="/ecglobalnet/pt/private">
+                                    Home                                </a>
+                            </li>
+                            <li data-generic-modal="wrapper" data-generic-modal-type="ajax" data-generic-modal-size="" data-generic-modal-title="Pesquisa" data-global-notification="sponsored">
+                                <a href="/ecglobalnet/pt/survey/" data-generic-modal-item="" data-generic-modal-url="/ecglobalnet/survey/getSponsoredSurvey">
+                                    Atividades                                    <span class="count count--act badge" data-global-notification="count"></span>
+                                </a>
+                            </li>
+                              <li class="">
+                                <a href="/ecglobalnet/profile/followers">
+                                    Conexões                                </a>
+                            </li>
+                            <li class="_active">
+                                <a href="/ecglobalnet/pt/community">
+                                    Comunidades                                </a>
+                            </li>
+                             <li class="navbar-nav-link navbar-nav-link-cart">
+                                  <a href="/ecglobalnet/accesstoken/generate/0fa795b26842a1a5f95857aae45ed4a7/aHR0cDovL3BocC5ob21vbC5lY2xhYnMuaXQvY21zL2VjZ2xvYmFsbmV0L3Nob3A=" target="_blank">
+                                    <span>Loja</span>
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                </a>
+                            </li>
+                </ul><!-- ./ nav-global -->
+
+                <ul class="nav navbar-nav navbar-right nav-user navbar-user" role="navigation">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                                <img src="/ecglobalnet/_assets/upload/profile/0fa795b26842a1a5f95857aae45ed4a7.jpg" alt="Jabba The Hutt Keebler" title="Jabba The Hutt Keebler" class="avatar avatar--small avatar-tertiary js-user-logged" width="30" height="30" />
+                                                <span class="pull-right glyphicon glyphicon-cog"></span>
+
+                                                <span data-user="" data-user-name="Jabba The Hutt Keebler" data-user-avatar="/ecglobalnet/_assets/upload/profile/0fa795b26842a1a5f95857aae45ed4a7.jpg" data-user-url="/ecglobalnet/profile"></span>
+                                                </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="/ecglobalnet/profile">
+                                                        Editar Perfil                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/ecglobalnet/profile/setting">
+                                                        Configurações de Conta                                                    </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="/ecglobalnet/incentive">
+                                                        Pontuação                                                    </a>
+                                                </li>
+                                                <li>
+                                                  <a href="/ecglobalnet/incentive/socialpoint/ranking">
+                                                    Colocação                                                   </a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li>
+                                                    <a href="/ecglobalnet/security/authentication/logout">
+                                                        Sair                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                </ul>
+                            </div>
+            <!-- isDesktop -->
+
+
+            <!-- isTablet and isMobile -->
+            <div class="menu-offcanvas hidden-md hidden-lg">
+                <nav class="navbar navbar-offcanvas navbar-offcanvas-touch offcanvas-transform js-offcanvas-done" role="navigation" id="js-menu-mobile">
+                    <div class="clearfix">
+                        <div class="navbar-header">
+                          <a class="navbar-brand offcanvas-toggle" href="#" data-toggle="offcanvas" data-target="#js-menu-mobile" data-canvas="body">
+                          <span class="glyphicon glyphicon-arrow-left"></span>
+                          <span class="site-header__brand">eCGlobal</span>
+                          </a>
+                        </div>
+
+                                                <div class="navbar-content">
+
+                            <div class="card-menu">
+  <div class="card-menu__content">
+
+    <div class="cover cover--small">
+      <div class="cover__photo" style="background-image: url(/ecglobalnet/_assets/upload/cover/0fa795b26842a1a5f95857aae45ed4a7.jpg?c90018ceba35b376eb333c394ee26ee8);"></div>
+    </div>
+
+    <figure class="card-menu__wrapper-avatar">
+      <img src="/ecglobalnet/_assets/upload/edit/0fa795b26842a1a5f95857aae45ed4a7.jpg?d4d7a775d13b43c8a2482ea78de5816e" class="avatar avatar--large" width="90" height="90" />
+          </figure>
+
+    <div class="row">
+
+      <div class="card-menu__wrapper-user">
+        <b class="card-menu__user-name">Jabba The Hutt Keebler</b>
+                <span class="card-menu__user-category">Iniciante</span>
+              </div>
+
+      <div class="card-menu__wrapper-statistc">
+        <p class="card-menu__statistc-item is-diamonds">
+          <b class="card-menu__statistc-score"></b>
+          eCPoints        </p>
+        <p class="card-menu__statistc-item is-ecpoints">
+          <b class="card-menu__statistc-score">0</b>
+          Diamonds        </p>
+      </div>
+    </div>
+  </div>
+</div><!-- ./ card-menu -->
+
+                            <ul class="nav navbar-nav navbar-featured">
+                                <li class="">
+                                  <a href="/ecglobalnet/pt/private">
+                                    Home                                  </a>
+                                </li>
+                                <li data-generic-modal="wrapper" data-generic-modal-type="ajax" data-generic-modal-size="" data-generic-modal-title="Pesquisa" data-global-notification="sponsored">
+                                <a href="/ecglobalnet/pt/survey/" data-generic-modal-item="" data-generic-modal-url="/ecglobalnet/survey/getSponsoredSurvey">
+                                Atividades                                <span class="count count--act badge" data-global-notification="count"></span>
+                                </a>
+                                </li>
+                                <li class="">
+                                  <a href="/ecglobalnet/profile/followers">
+                                      Conexões                                  </a>
+                                </li>
+                                <li class="_active">
+                                  <a href="/ecglobalnet/pt/community">
+                                    Comunidades                                  </a>
+                                </li>
+                                  <li class="navbar-nav-link navbar-nav-link-cart">
+                                  <a href="/ecglobalnet/accesstoken/generate/0fa795b26842a1a5f95857aae45ed4a7/aHR0cDovL3BocC5ob21vbC5lY2xhYnMuaXQvY21zL2VjZ2xvYmFsbmV0L3Nob3A=" target="_blank">
+                                    <span>Loja</span>
+                                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                                </a>
+                            </li>
+                            </ul><!-- ./ nav-global -->
+
+                            <ul class="nav navbar-nav">
+                                <li>
+                                  <a href="/ecglobalnet/profile">
+                                    Perfil Avançado                                    <small class="is-hidden pull-right">80% concluído</small>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/ecglobalnet/incentive">
+                                    Meus Bottons                                    <span class="pull-right label label-warning is-hidden">1</span>
+                                  </a>
+                                </li>
+                            </ul><!-- ./ nav-global -->
+
+                            <ul class="nav navbar-nav">
+                                <li class="nav-header clearfix">
+                                      <span class="glyphicon glyphicon-cog pull-left"></span>
+                                    Configurações                                </li>
+                                <li>
+                                    <a href="/ecglobalnet/profile">
+                                    Editar Perfil                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ecglobalnet/profile/setting">
+                                    Configurações de Conta                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/ecglobalnet/incentive">
+                                    Pontuação                                    </a>
+                                </li>
+                                <li>
+                                  <a href="/ecglobalnet/incentive/socialpoint/ranking">
+                                    Colocação                                   </a>
+                                </li>
+                                <li>
+                                    <a href="/ecglobalnet/security/authentication/logout">
+                                    Sair                                    </a>
+                                </li>
+                            </ul><!-- ./ nav-user -->
+                        </div><!-- ./ nav-content -->
+                        
+                      </div><!--container -->
+
+
+                     <footer class="footer" role="footer">
+                      <span class="pull-left"> ©2017 eCGlobal | </span>
+<ul class="list-footer list-inline">
+	<li>
+		<a href="/ecglobalnet/pt/about/">
+			Sobre a eCGlobal		</a>
+	</li>
+	<li>
+		<a href="/ecglobalnet/pt/terms/">
+			Termos de Uso		</a>
+	</li>
+	<li>
+		<a href="/ecglobalnet/pt/privacy/">
+			Política de Privacidade		</a>
+	</li>
+	<li>
+		<a href="/ecglobalnet/pt/awardsSystem/">
+			Sistema de Premiação		</a>
+	</li>
+	<li>
+		<a href="/ecglobalnet/pt/faq/">
+			Perguntas Frequentes		</a>
+	</li>
+</ul>
+                    </footer>
+                </nav>
+            </div>
+            <!-- isTablet and isMobile -->
+
+            <!-- allDevices-->
+                        <div class="navbar-collapse collapse in ">
+              <ul class="nav navbar-nav navbar-right navbar-icons">
+                     <li>
+                        <a class="btn btn--link" data-connection-action="view-orders" data-status="on" data-trigger="focus" tabindex="0" role="button" href="#">
+                            <div class="icon-group icon-group--user" data-global-notification="connections">
+                              <img src="/ecglobalnet/assets/images/i_conexao.svg" class="icon-image" width="30px" height="30px" />
+                              <div class="count" data-global-notification="count">0</div>
+                            </div>
+                        </a>
+                      </li>
+
+                      <li>
+                          <a class="btn btn--link" data-activity-log="view-orders" data-trigger="focus" data-status="on" tabindex="0" role="button" href="#" data-original-title="" title="">
+                            <div class="icon-group icon-group--bell " data-global-notification="user-activies">
+                                <span class="icon icon-bell"></span>
+                                                                <span class="count" data-global-notification="count">0</span>
+                              </div>
+                          </a>
+                      </li>
+              </ul>
+            </div><!-- / nav-icons -->
+            <!-- allDevices-->
+            
+        </div><!-- ./container -->
+      </nav>
+</header>
+
+    <header class="site-header is-desktop hidden-sm hidden-xs" data-turbolinks-permanent="" id="topo">
+  <nav class="navbar navbar-default site-header__bar">
+    <div class="container site-header__wrapper">
+
+      <div class="navbar-header">
+        <a class="navbar-brand site-header__brand" href="/ecglobalnet/private">
+          eCGlobal
+        </a>
+      </div>
+
+            <div class="nav-global hidden-sm hidden-xs">
+        <ul class="nav navbar-nav navbar-right nav-user " role="navigation">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+              <img src="/ecglobalnet/_assets/upload/profile/0fa795b26842a1a5f95857aae45ed4a7.jpg" alt="Jabba The Hutt Keebler" title="Jabba The Hutt Keebler" class="avatar avatar--small avatar-tertiary js-user-logged" width="30" height="30" />
+              <span class="pull-right glyphicon glyphicon-cog"></span>
+
+              <span data-user="" data-user-name="Jabba The Hutt Keebler" data-user-avatar="/ecglobalnet/_assets/upload/profile/0fa795b26842a1a5f95857aae45ed4a7.jpg" data-user-url="/ecglobalnet/profile"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="/ecglobalnet/profile">
+                  Editar Perfil                </a>
+              </li>
+              <li>
+                <a href="/ecglobalnet/profile/setting">
+                  Configurações de Conta                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="/ecglobalnet/incentive">
+                  Pontuação                </a>
+              </li>
+              <li>
+                <a href="/ecglobalnet/incentive/socialpoint/ranking">
+                  Colocação                 </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="/ecglobalnet/security/authentication/logout">
+                  Sair                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-collapse collapse in ">
+        <ul class="nav navbar-nav navbar-right navbar-icons">
+          <li>
+            <a class="btn btn--link" data-connection-action="view-orders" data-status="on" tabindex="0" role="button" href="#">
+              <div class="icon-group icon-group--user" data-global-notification="connections">
+                <img src="/ecglobalnet/assets/images/i_conexao.svg" class="icon-image" width="30px" height="30px" />
+                <div class="count" data-global-notification="count">0</div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+              <a class="btn btn--link" data-activity-log="view-orders" data-status="on" tabindex="0" role="button" href="#" data-original-title="" title="">
+                  <div class="icon-group icon-group--bell " data-global-notification="user-activies">
+                    <span class="icon icon-bell"></span>
+                                        <span class="count" data-global-notification="count">0</span>
+                  </div>
+              </a>
+          </li>
+        </ul>
+      </div><!-- / nav-icons -->
+          </div>
+  </nav>
+
+    <nav class="site-header__bar navbar navbar-inverse">
+    <div class="container">
+      <ul class="nav nav-site navbar-nav navbar-left col-xs-9">
+        <li class="">
+          <a href="/ecglobalnet/pt/private" id="homeTour" accesskey="h" class="tour-tour-element tour-tour-0-element" aria-describedby="popover960280">
+            <span class="visible-xs-block glyphicon glyphicon-home"></span>
+            <span class="hidden-xs">Home</span>
+          </a>
+        </li>
+        <li class="" data-generic-modal="wrapper" data-generic-modal-type="ajax" data-generic-modal-size="" data-generic-modal-title="Pesquisa" data-global-notification="sponsored">
+          <a href="/ecglobalnet/pt/survey/" data-generic-modal-item="" data-generic-modal-url="/ecglobalnet/survey/getSponsoredSurvey" id="surveyTour" accesskey="s">
+            <span class="visible-xs-block glyphicon glyphicon-list-alt"></span>
+            <span class="hidden-xs">Atividades</span>
+            <span class="count count--act badge" data-global-notification="count"></span>
+          </a>
+        </li>
+        <li class="" id="connectionTour">
+            <a href="/ecglobalnet/profile/followers">
+                Conexões            </a>
+        </li>
+        <li class="active">
+          <a href="/ecglobalnet/pt/community" id="communityTour" accesskey="c">
+            <span class="visible-xs-block glyphicon glyphicon-pencil"></span>
+            <span class="hidden-xs">Comunidades</span>
+          </a>
+        </li>
+        <li class="" id="shopTour">
+          <a href="/ecglobalnet/accesstoken/generate/0fa795b26842a1a5f95857aae45ed4a7/aHR0cDovL3BocC5ob21vbC5lY2xhYnMuaXQvY21zL2VjZ2xvYmFsbmV0L3Nob3A=" target="_blank" accesskey="b">
+            <span class="hidden-xs">Loja</span>
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+    <main class="container main">
+      <h1>Ocorreu um erro inesperado.</h1>
+<h2>An error occurred during execution; please try again later.</h2>
+
+
+<hr />
+<h2>Informação Adicional:</h2>
+<h3>Shared\Exception\ApiException</h3>
+<dl>
+    <dt>Arquivo:</dt>
+    <dd>
+        <pre class="prettyprint linenums">/var/www/ecgs/v2/module/Core/src/Core/Model/DAO/GenericDAO.php:93</pre>
+    </dd>
+    <dt>Mensagem:</dt>
+    <dd>
+        <pre class="prettyprint linenums">EC_API (A unexpected error has occurred. Tray again later. [errno: 1])</pre>
+    </dd>
+    <dt>Rastreamento da Pilha:</dt>
+    <dd>
+        <pre class="prettyprint linenums">#0 /var/www/ecgs/v2/module/Shared/src/Shared/Model/DAO/InterestDAO.php(75): Core\Model\DAO\GenericDAO-&gt;checkAPIResponse(Object(stdClass), Array)
+#1 /var/www/ecgs/v2/module/Shared/src/Shared/Model/Business/InterestBusiness.php(23): Shared\Model\DAO\InterestDAO-&gt;findAll(Object(Shared\Model\VO\Filter\InterestFilter))
+#2 /var/www/ecgs/v2/module/Community/src/Community/Controller/CommunityController.php(726): Shared\Model\Business\InterestBusiness-&gt;findAll(Object(Shared\Model\VO\Filter\InterestFilter))
+#3 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractActionController.php(83): Community\Controller\CommunityController-&gt;subjectAction()
+#4 /var/www/ecgs/v2/module/Core/src/Core/Controller/GenericController.php(40): Zend\Mvc\Controller\AbstractActionController-&gt;onDispatch(Object(Zend\Mvc\MvcEvent))
+#5 [internal function]: Core\Controller\GenericController-&gt;onDispatch(Object(Zend\Mvc\MvcEvent))
+#6 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#7 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(207): Zend\EventManager\EventManager-&gt;triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#8 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/Mvc/Controller/AbstractController.php(116): Zend\EventManager\EventManager-&gt;trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#9 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/Mvc/DispatchListener.php(113): Zend\Mvc\Controller\AbstractController-&gt;dispatch(Object(Zend\Http\PhpEnvironment\Request), Object(Zend\Http\PhpEnvironment\Response))
+#10 [internal function]: Zend\Mvc\DispatchListener-&gt;onDispatch(Object(Zend\Mvc\MvcEvent))
+#11 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(468): call_user_func(Array, Object(Zend\Mvc\MvcEvent))
+#12 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/EventManager/EventManager.php(207): Zend\EventManager\EventManager-&gt;triggerListeners('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#13 /var/www/ecgs/v2/vendor/zendframework/zendframework/library/Zend/Mvc/Application.php(313): Zend\EventManager\EventManager-&gt;trigger('dispatch', Object(Zend\Mvc\MvcEvent), Object(Closure))
+#14 /var/www/ecgs/v2/public/index.php(52): Zend\Mvc\Application-&gt;run()
+#15 {main}</pre>
+    </dd>
+</dl>
+
+
+    </main>
+
+      <div class="arrow-wrapper" data-app="arrow">
+        <button class="arrow-move arrow-up" data-arrow="top">Ir para o topo</button>
+      </div>
+
+    <!-- MODAL GENERIC -->
+    <div class="modal fade" id="modalGeneric" tabindex="-1" role="dialog" aria-labelledby="modalGenericTitle" aria-hidden="true">
+      <div class="modal-dialog" id="modalGenericSize">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" data-modal="clean" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="modalGenericTitle"></h4>
+          </div>
+          <div class="modal-body" id="modalGenericContent">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- MODAL CONFIRM -->
+     <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="modalGenericTitle" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modal-confirm">
+          <div class="modal-body">
+
+            <div class="confirm center-block text-center">
+              <h4 class="confirm-title js-confirm-title"></h4>
+              <div class="confirm-actions">
+                <button class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button class="btn btn-primary js-confirm-accept" data-confirm-action="">Excluir</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- MODAL CONECTIONS -->
+      <div class="modal fade" id="modalConnection" tabindex="-1" role="dialog" aria-labelledby="modalConnectionLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-content--primary">
+            <div class="modal-header modal-header--secondary">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title modal-title--featured" id="modalConnectionLabel">Membros em comum</h4>
+              <p class="modal-title"></p>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                                <div data-connection="search-content" id="connections-rows"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+    
+    <script type="text/javascript">
+      var pid = '0fa795b26842a1a5f95857aae45ed4a7';
+      var cid = '265';
+      var LANG = 'pt';
+      var BASE_URL = 'http://10.0.0.201/ecglobalnet';
+    </script>
+
+    <!-- lang -->
+    <script src="/ecglobalnet/assets/js/lang-min.js"></script>
+
+    <!-- vendor -->
+    <script src="/ecglobalnet/assets/js/core-min.js"></script>
+    <script src="/ecglobalnet/assets/js/libs-min.js"></script>
+    <script src="/ecglobalnet/assets/js/plugins-min.js"></script>
+
+    <!-- cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.liveurl/1.2.2/jquery.liveurl.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/bloodhound.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.oembedall/0.1/jquery.oembed.js"></script>
+
+    <script type="text/javascript" src="/ecglobalnet/assets/js/vendor/plugins/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/ecglobalnet/assets/js/vendor/plugins/bootstrap-tour.min.js"></script>
+<script type="text/javascript">
+    //&lt;!--
+    
+		        $(document).ready(function(){
+		          var tour = new Tour({
+		            steps: [
+		            {
+		              element: "#homeTour",
+		              placement: "bottom",
+		              content: intro.getContent("HOME", "Fique por dentro do que está acontecendo na Feed da eCGlobal! Agora você participa de atividades, avalia e compartilha experiências com produtos e marcas e discute o seu ponto de vista com outros usuários.", "intro-feed.png")
+		            },
+		            {
+		              element: "#surveyTour",
+		              placement: "bottom",
+		              content: intro.getContent("ATIVIDADES", "Participe de pesquisas e atividades patrocinadas! Você ajuda empresas a construir melhores produtos e serviços e ainda acumula eCPoints, que podem ser trocados na Loja Virtual.", "intro-survey.png")
+		            },
+		      		{
+		              element: "#connectionTour",
+		              placement: "bottom",
+		              content: intro.getContent("CONEXÕES", "Faça novas conexões na eCGlobal! Agora você pode se conectar com outros usuários da rede, ver sugestões de amigos, quem você segue e quem está seguindo você!", "intro-connections.png")
+		            },
+		            {
+		              element: "#communityTour",
+		              placement: "bottom",
+		              content: intro.getContent("COMUNIDADES", "Agora, a eCGlobal tem comunidades que são a sua cara! Participe das comunidades que mais combinam com você e fale sobre o que você mais gosta.", "intro-feed.png")
+		            },
+		            {
+		              element: "#shopTour",
+		              placement: "bottom",
+		              content: intro.getContent("SHOP", "Na Loja Virtual da eCGlobal você troca seus eCPoints acumulados por produtos incríveis! Confira seu saldo e comece a fazer suas trocas agora mesmo.", "intro-store.png"),
+		              onShown: function(){
+		                $(".tour [data-role=\"next\"]").hide();
+		                $(".tour [data-role=\"end\"]").addClass("btn-warning").text("Fim");
+		              }
+		            },
+		            ],
+		            template: intro.getTemplate()
+		          });
+
+		          tour.init();
+		          tour.start();
+		        });
+		        
+    //--&gt;
+</script>    <script src="/ecglobalnet/assets/js/application.js"></script>
+
+          <script src="https://cdn.socket.io/socket.io-1.4.3.js"></script>
+      <script>
+          var socket = io.connect('http://10.0.0.201:3000/ecplatform'+"?id=c53TAvHUorBnwIhkCBdJC7W0U+XEU8yScIPgte3NiQE=", { 'reconnection': false });
+
+          socket.on("c53TAvHUorBnwIhkCBdJC7W0U+XEU8yScIPgte3NiQE=", function(data) {
+              var _data = JSON.parse(data);
+              App.notification.showAlert(_data);
+          });
+
+                  socket.on("OV5pf7H+e7CGYNgjSglG3A==", function(data) {
+              App.notification.delegate(data, pid);
+          });
+             </script>
+        
+
+<div class="popover tour tour-tour tour-tour-0 fade bottom in" data-toggle="popover" id="step-0" style="top: 158px; left: 0px; display: block;"><div class="arrow" style="left: 7.36585%;"></div><div class="container"><div class="tour__wrapper col-md-9"><div class="popover-content row"><div class="row"><figure class="tour__media col-md-1"><img src="http://10.0.0.201/ecglobalnet/assets/images/icons/generic/intro-feed.png" class="img-reponsive" /></figure> <div class="tour__content col-md-11"><h3 class="tour__title title--small">HOME</h3><p class="tour__text text--small">Fique por dentro do que está acontecendo na Feed da eCGlobal! Agora você participa de atividades, avalia e compartilha experiências com produtos e marcas e discute o seu ponto de vista com outros usuários.</p></div></div></div></div><div class="tour__actions col-md-3"><div class="popover-navigation"><button class="btn btn--primary pull-left" data-role="next">Avançar</button><button class="btn btn--default pull-right" data-role="end">Pular tutorial</button></div></div></div></div></body></html>

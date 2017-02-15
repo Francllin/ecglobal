@@ -1,3 +1,18 @@
+# require_relative 'helper.rb'
+# require_relative 'spec_helper.rb'
+## Helpers Definitions
+World(Helper)
+
+After do |cenario|
+    ## take screenshot
+    cenario_name = cenario.name.gsub(/\s+/, '_').tr('/', '_')
+    if cenario.failed?
+      take_screenshot(cenario_name.downcase!, 'failed')
+    else
+      take_screenshot(cenario_name.downcase!, 'passed')
+    end
+  end
+
 Before '@carrega_dados' do
   @home = Home.new  
   @cadastro = CadastroEclobal.new
@@ -12,6 +27,7 @@ Before '@carrega_dados' do
   @valor = 10
   @location = 'Salvador, Bahia, Brasil'
   puts (@email)
+
 
 end
 
@@ -35,11 +51,12 @@ Before '@carrega_cadastro_user' do
   if (@primeiro_nome.length > @valor)
   execute_script 'window.document.getElementById("radio_male").click()'
 end
+
   @cadastro.location.set(@location)
   execute_script 'window.document.getElementById("hidden-language").value="1"'
   execute_script 'window.document.getElementById("hidden-city").value="533"'
   execute_script 'window.document.getElementById("hidden-country").value="31"'
   execute_script 'window.document.getElementById("hidden-state").value="113"'
   @cadastro.find('#js-button-register').click
-    
+
 end
