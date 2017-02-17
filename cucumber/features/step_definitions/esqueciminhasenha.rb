@@ -26,4 +26,6 @@ Entao(/^poder logar na plataforma com a nova senha$/) do
   @login.username.set(@email)
   @login.passlogin.set('kfkfkfkf')
   @login.entrar.click
+  expect(page).to have_selector :css, '#js-new-comment'
+
 end
