@@ -1,29 +1,20 @@
+Before '@login_email' do
+#Servidor de email
+@mohmal = "https://www.mohmal.com/pt/"
+  visit @mohmal
+  @rand = execute_script ("return !!window.document.getElementById('rand');")
+  if @rand == true
+    find('#rand').click
+    else
+      find('#delete').click
+      end
+      @text_email = execute_script ("return window.document.getElementsByClassName('email')[0].innerText;")
+    puts(@text_email)
 
-Before '@carrega_dados' do
-  # Estanciando as variaveis.
-  @home = Home.new  
-  @cadastro = CadastroEclobal.new
-  @esquecisenha = Esquecisenha.new
-  @interesse = CadastroInteresse.new
-  @login = Login.new
+  end
+
+Before '@cadastroesqueciminhasenha' do
   
-  #Elementos Fakes
-  @email = Faker::Internet.email('teste1')
-  @senha = "123456"
-  @primeiro_nome = Faker::StarWars.character
-  @sobrenome = Faker::Name.last_name 
-  @day = Faker::Base.numerify("1#")
-  @month = Faker::Base.numerify("0#")
-  @year = Faker::Base.numerify("19##")
-  @valor = 10
-  @location = 'Salvador, Bahia, Brasil'
-  puts (@email)
-
-end
-
-  Before '@carrega_cadastro_user' do
-  # criar cadastro na rede
-
   @home.load
   # verificar que tem 2 registros de Email (Fake = @email e o Mohmal = @text_email).
   @cadastro.email.set(@email)
@@ -49,6 +40,18 @@ end
   execute_script 'window.document.getElementById("hidden-state").value="113"'
   @cadastro.find('#js-button-register').click
 
-end
+  # interesses
 
- 
+  find(:xpath, "html/body/main/section/div/div/div[1]/div/label/figure/img").click
+  @interesse.continuar.click
+  sleep 1
+  @interesse.continuar.click
+  sleep 1
+  @interesse.continuar.click
+
+  # sair da rede
+
+  find(:xpath, "/html/body/header[2]/nav[1]/div/div[2]/ul/li/a/span[1]").click
+  find(:xpath, "(//a[contains(text(),'Sair')])[3]").click
+
+end

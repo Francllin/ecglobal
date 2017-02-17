@@ -3,7 +3,6 @@ class Home < SitePrism::Page
   # set_url "http://10.0.0.201/ecglobalnet/"
   set_url "http://ecglobal.com"
   # set_url_matcher "/community/subject"
-
 end
 
 class CadastroEclobal < SitePrism::Page
@@ -19,8 +18,24 @@ class CadastroEclobal < SitePrism::Page
  
 end
 
+
 class CadastroInteresse < SitePrism::Page
 
 element :continuar, :xpath, '/html/body/main/section/footer/a'
+
+end 
+
+
+class Esquecisenha < SitePrism::Page
+
+element :esqueci_email, "input[id='username']"
+
+end 
+
+class Login < SitePrism::Page
+
+element :username, "input[id='username']"
+element :passlogin, "input[id='passlogin']"
+element :entrar, "input[id='js-confirm-ecid']"
 
 end 
