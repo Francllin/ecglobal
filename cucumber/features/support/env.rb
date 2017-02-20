@@ -19,4 +19,3 @@ Capybara.default_driver = :selenium
 Capybara.default_max_wait_time = 60
 
 Capybara.app_host = "http://10.0.0.201/ecglobalnet"
-

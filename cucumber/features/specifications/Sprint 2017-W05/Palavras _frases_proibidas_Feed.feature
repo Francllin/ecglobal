@@ -25,12 +25,12 @@ Entao a palavra deve ser exibida no dashboard
 
 @listagem_palavras
 Cenario: Listagem de palavras proibidas
-Dado que eu acesse a pagina de cadastro de palavras proibidas
+Dado que eu acesse dashboard
 Entao deverá ser exibida todas as palavras proibidas no dashboard
 
 @filtro_palavras
 Cenario: Filtro de palavras por comunidade
-Dado que eu acesse o dashboard de palavras proibidas
+Dado que eu acesse o dashboard
 Quando filtro as palavras por comunidade
 Entao deverá ser exibida somente as palavras para a respequitiva comunidade
 
