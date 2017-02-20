@@ -15,6 +15,7 @@ class CadastroEclobal < SitePrism::Page
   element :month, "input[id='month']"
   element :year, "input[id='year']"
   element :location, "input[id='location-autocomplete']"
+  
  
 end
 
@@ -39,3 +40,9 @@ element :passlogin, "input[id='passlogin']"
 element :entrar, "input[id='js-confirm-ecid']"
 
 end 
+
+class Configuracao < SitePrism::Page
+element :country_origin, "select[id='country-origin']"
+end
+
+

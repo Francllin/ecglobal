@@ -10,6 +10,7 @@ require 'capybara-screenshot/cucumber'
 require 'capybara'
 
 
+
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end

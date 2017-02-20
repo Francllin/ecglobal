@@ -9,8 +9,6 @@ gem "rspec"
 gem "faker"
 gem "cpf_faker"
 gem "site_prism"
-gem 'site_prism'
 gem 'syntax'
 gem 'poltergeist'
-gem 'rubocop'
 gem 'capybara-screenshot'

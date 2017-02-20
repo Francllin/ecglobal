@@ -7,7 +7,7 @@ eu gostaria de solicitar uma nova senha quando esquecer da mesma
 para que eu possa acessar a plataforma 
 
 @carrega_dados
-# @login_email
+@login_email
 @cadastroesqueciminhasenha
 @esqueci_senha
 Cenario: solicitar senha nova
